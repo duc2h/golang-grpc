@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package calculator; // unix giua nhung file proto voi nhau
+
+option go_package="calculator/calculatorpb"; // language go nen su dung go_package -> tao ra package calculatorpb
+
+message SumRequest {
+    int32 num1 = 1;
+    int32 num2 = 2;
+
+}
+
+message SumResponse {
+    int32 result = 1;
+}
+
+message PNDRequest{
+    int32 number = 1;
+}
+
+message PNDResponse {
+    int32 result = 1;
+}
+
+message AverageRequest {
+    float number = 1;
+}
+
+message AverageResponse {
+    float result = 1;
+}
+
+message FindMaxRequest {
+    int32 number = 1;
+}
+
+message FindMaxResponse {
+    int32 result = 1;
+}
+
+message SquareRequest {
+    int32 number = 1;
+}
+
+message SquareResponse {
+    double result = 1;
+}
+
+service CalculatorService { // dinh nghia service, ben trong se dinh nghia nhung api cua service do
+    rpc Sum(SumRequest) returns (SumResponse) {}
+    rpc SumWithDeadline(SumRequest) returns (SumResponse) {}
+    rpc PriceNumberDecomposition(PNDRequest) returns (stream PNDResponse){}
+    rpc Average(stream AverageRequest) returns (AverageResponse){}
+    rpc FindMax(stream FindMaxRequest) returns (stream FindMaxResponse){}
+    rpc Square(SquareRequest) returns (SquareResponse){}
+} 
