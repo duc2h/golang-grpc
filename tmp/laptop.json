@@ -1,0 +1,62 @@
+{
+  "id": "8c372adf-0196-4681-947e-6260a65c01c1",
+  "brand": "Dell",
+  "name": "Latitude",
+  "cpu": {
+    "brand": "Intel",
+    "name": "Core i7-9750H",
+    "numberCores": 3,
+    "numberThreads": 5,
+    "minGhz": 0,
+    "maxGhz": 3.032979086824441
+  },
+  "ram": {
+    "value": "61",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "Nvidia",
+      "name": "GTX 1660-Ti",
+      "minGhz": 1.2638725175465675,
+      "maxGhz": 1.3769613257308504,
+      "memory": {
+        "value": "5",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "439",
+        "unit": "GIGABYTE"
+      }
+    },
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "1",
+        "unit": "TERABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "sizeInch": 15.3161335,
+    "resolution": {
+      "width": 2894,
+      "height": 1628
+    },
+    "panel": "IPS",
+    "multitouch": true
+  },
+  "keyboard": {
+    "layout": "AZERTY",
+    "backlit": false
+  },
+  "weightKg": 1.3561144300061565,
+  "priceUsd": 2483.5171528946353,
+  "releaseYear": 2018,
+  "updatedAt": "2020-06-09T04:05:28.044163400Z"
+}

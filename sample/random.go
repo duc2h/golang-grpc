@@ -2,10 +2,15 @@ package sample
 
 import (
 	"math/rand"
+	"time"
 
 	"github.com/google/uuid"
 	"github.com/hoangduc02011998/golang-grpc/pb"
 )
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 func randomKeyboardLayout() pb.Keyboard_Layout {
 	switch rand.Intn(3) {
